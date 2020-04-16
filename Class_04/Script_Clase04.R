@@ -8,7 +8,7 @@
 #---- Part 1: Data Management  -------------------
 
 # Reading an exporting data
-
+rm(list=ls())
 library(readxl)
 library(data.table)
 
@@ -115,7 +115,7 @@ ggplot(G,aes(x=`Casos confirmados.Femenino`,y=`Casos confirmados.Masculino`))+ge
 
 p1<-ggplot(data = E,mapping = aes(x=AvAge,y=`Casos confirmados`))+geom_point()+facet_wrap(~Sexo)+geom_smooth(method = 'lm', col= "light blue",se=F) + geom_smooth(method = 'loess',col='pink',se=F) #facet_wrap me divide en este caso por sexo(debe ser una variable factor y caracter), o sea, me separa femenino y masculino. geom_smooth  me sirve para ver si existe un patron, una linea de tendencia, method la linea que quiero utilizar y se = , loess para hacer ventanitas en este caso hacer distintas regreciones por los puntos
 
-
+p1
 #plotly
 library(plotly)
 ggplotly(p1)
