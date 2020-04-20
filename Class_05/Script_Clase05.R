@@ -106,7 +106,7 @@ p_sd<-ggplot(comunas_rm) +
 ##### leaflet
 library(leaflet)
 library(sp)
-
+str(comunas_rm)
 st_crs(comunas_rm)
 comunas_rm<-st_transform(comunas_rm,crs = "+proj=longlat +datum=WGS84")
 
