@@ -198,7 +198,6 @@ leaflet() %>%
   addAwesomeMarkers(ratings[4], lat = ratings$lat[4], lng = ratings$lng[4], popup = ratings$name[4], icon = color_r_2)
 ```
 
-Notar inconsistencia de vistancia euclideana por no considerar valores absolutos de las latitudes y longitudes.
 
 ## Una alternativa a googleways: paquete nominatim
 

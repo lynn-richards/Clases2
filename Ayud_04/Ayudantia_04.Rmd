@@ -7,6 +7,7 @@ output:
 params:
   reg:  3
 ---
+rm(list=ls())
 
 ```{r CREAMOS PARAMETROS,include=FALSE}
 reg <- params$reg
